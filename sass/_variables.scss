@@ -1,0 +1,22 @@
+// Colors
+$white:         #ffffff;
+$black:         #000000;
+
+$gray-light:    #ccc;
+$gray-medium:   #999;
+$gray-dark:     #222;
+
+$blue:          #3ba4d1;
+$blue-dark:     darken($blue, 10%);
+$blue-darkest:     darken($blue, 20%);
+
+$red:           #e2231a;
+$red-light:     lighten($red, 40%);
+
+$base-font-color: $black;
+
+// See brandcolors.net.
+$fb-blue: #3b5998;
+$fb-blue-dark: darken($fb-blue, 20%);
+$twitter-blue: #55acee;
+$twitter-blue-dark: darken($twitter-blue, 20%);

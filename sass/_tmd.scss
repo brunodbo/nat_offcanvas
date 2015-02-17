@@ -1,0 +1,46 @@
+// Today's must read
+#tmd {
+  position: absolute;
+  top: 80px; // 80px header height
+  left: -351px;
+  bottom: 0;
+  z-index: 5;
+  width: 350px;
+  background-color: white;
+  &.is-closed {
+    left: -351px;
+  }
+  &.is-open {
+    left: 0;
+  }
+}
+
+// Full width elements that are getting pushed over (e.g., the site footer).
+.tmd-push-f {
+  &.is-pulled {
+    margin-left: 0;
+  }
+  &.is-pushed {
+    margin-left: 350px;
+  }
+}
+
+.tmd-push-inner {
+  @media (max-width: 1400px) {
+    &.is-pulled {
+      margin-left: 17.0213%;
+    }
+    &.is-pushed {
+      margin-left: 370px;
+    }
+  }
+}
+
+.tmd-hide {
+  &.is-visible {
+    display: block;
+  }
+  &.is-hidden {
+    display: none;
+  }
+}

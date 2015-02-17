@@ -13,7 +13,45 @@
   &.is-open {
     left: 0;
   }
+  &.animated {
+    transition: left .5s;
+  }
 }
+
+#tmd-open {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 5;
+  background-color: $gray-dark;
+  color: white;
+}
+
+#tmd-open,
+#tmd-close {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.tmd__header {
+  margin: 0 0 20px 0;
+  padding: 10px 0 10px 20px;
+  height: 40px;
+  border-bottom: 1px solid $gray-medium;
+  font-size: 18px;
+  color: $gray-medium;
+}
+
+#tmd-close {
+  margin-top: -10px;
+  float: right;
+  border-left: 1px solid $gray-medium;
+}
+
 
 // Full width elements that are getting pushed over (e.g., the site footer).
 .tmd-push-f {
@@ -22,6 +60,9 @@
   }
   &.is-pushed {
     margin-left: 350px;
+  }
+  &.animated {
+    transition: margin-left .5s;
   }
 }
 
@@ -34,13 +75,21 @@
       margin-left: 370px;
     }
   }
+  &.animated {
+    transition: margin-left .5s;
+  }
 }
 
 .tmd-hide {
   &.is-visible {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
   &.is-hidden {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  &.animated {
+    transition: visibility .5s, opacity .5s;
   }
 }
